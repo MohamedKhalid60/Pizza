@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >about</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >pages</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">faqs</a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="#">
+              <img src="img/logo-light-divided-2.png" alt="" />
+            </a>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="search btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <button class="btn homeBack" id="homeBack">UP</button>
+    <section class="home">
+      <div class="container">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-xl-4">
+            <img src="img/h6-rev-img-2.png" alt="" />
+          </div>
+          <div class="col-xl-5">
+            <img src="img/h6-rev-img-3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pagin" class="pagin m-t-150">
+      <div class="container">
+        <div class="row justify-content-center text-center" id="row">
+          <!-- <div class="col-xl-4">
+            <div class="card">
+              <div class="overlayImg">
+                <span><i class="fa-solid fa-share"></i></span>
+              </div>
+              <img class="imgvar" src="img/h6-rev-img-3.png" alt="" />
+              <h3>pizza</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="card">
+              <div class="overlayImg">
+                <span><i class="fa-solid fa-share"></i></span>
+              </div>
+              <img class="imgvar" src="img/h6-rev-img-3.png" alt="" />
+              <h3>pizza</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div> -->
+        </div>
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" id="prev" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a id="one" class="page-link">pizza</a>
+            </li>
+            <li class="page-item">
+              <a id="two" class="page-link">beef</a>
+            </li>
+            <li class="page-item">
+              <a id="three" class="page-link">salad</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" id="next" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="overlay" class="overlay">
+        <div class="row justify-content-between">
+          <div id="overlayItem" class="col-xl-4 overlayItem">
+            <span id="prevImg"><i class="fa-solid fa-arrow-left"></i></span>
+            <span id="nextImg"><i class="fa-solid fa-arrow-right"></i></span>
+            <span id="close"> <i class="fa-solid fa-xmark"></i></span>
+          </div>
+          <div class="text col-xl-6">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              expedita, doloribus labore consectetur unde deserunt ad aliquid
+              neque doloremque perspiciatis excepturi sit numquam quas
+              laudantium maiores alias laboriosam nobis in.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              expedita, doloribus labore consectetur unde deserunt ad aliquid
+              neque doloremque perspiciatis excepturi sit numquam quas
+              laudantium maiores alias laboriosam nobis in.
+            </p>
+            <button class="btn btn-info">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---- js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
